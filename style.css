@@ -1,0 +1,78 @@
+header
+{display: flex;
+flex-direction: row;
+padding-top: 41px;
+}
+.logo
+{
+width: 88px;
+height: 44px;
+}
+#sousnavigation
+{
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
+align-content: stretch;
+flex-direction: row;
+width: 34%;
+}
+
+#logoentête
+{
+display: flex;
+width: 66%;
+}
+#Hébergements:hover, #activités:hover
+{
+border-top: solid blue;
+}
+*
+{
+    width: 1436px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+.marqueur{
+    display: flex;
+    align-content: left;
+    width: 10.5px;
+    height: 20px;
+}
+#recherche{
+display: flex;
+align-content: flex-start;
+align-items: flex-start;
+width: 418px;
+Height: 48px;
+background-color: #F2F2F2;
+border-radius: 10px;
+}
+#ville{
+display: flex;
+width: 234px;
+height: 48px;
+}
+#cherche{
+width: 132px;
+height: 48px;
+background-color: #0065FC;
+}
+#filtres{
+display: flex;
+flex-direction: row;
+align-content: space-around;
+height: 51px;
+width: 65%;
+border: 1px solid #F2F2F2;
+border-radius: 30px;
+}
+.économie, .familial, .Romantique, .animaux{
+height: 36px;
+width: 26px;
+border: ;
+}
