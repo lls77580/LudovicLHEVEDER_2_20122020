@@ -45,7 +45,7 @@
     }
     .logoentete{
     grid-row-start: 1;
-    grid-template-columns: 1;
+    grid-column-start: 1;
     width: 66%;
     }
     .logo{
@@ -55,14 +55,12 @@
     }
     .sousnavigation{
     grid-row-start:1;
-    grid-template-columns:2;
+    grid-column-start:2;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 41px;
     padding: 20px;
-    grid-row-start:1;
-    grid-template-columns:2;
     }
     .hebergements, .activites, .inscription{
     margin-top: 49px;
@@ -219,8 +217,8 @@
     border-radius: 15px;
     margin-top: 45px;
     margin-right: 0px;
-    padding-left: auto;
-    padding-right: auto;
+    padding-left: 4px;
+    padding-right: 4px;
     }
     .room1
     {
@@ -280,12 +278,12 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 95%;
-    height: 110px;
-    max-height: auto;
+    height: 100%;
+    max-height: 110px;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding:auto;
+    padding:4px;
     margin: auto;
     }
     .mep{
@@ -363,8 +361,8 @@
     margin-top: 10px;
     }
     .gridrighttitle{
-    grid-template-columns: 1;
-    grid-row-start: 1;
+    grid-column-start:1;
+    grid-row-start:1;
     padding-bottom: 0;
     margin-bottom: 0;
     }
@@ -387,7 +385,6 @@
     grid-template-rows: 39% 40% 25%;
     }
     .presentation{
-    grid-template-columns: ;
     line-height: 20%;
     margin-top: 15px;
     }
@@ -417,6 +414,7 @@
     margin-left: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    box-shadow: 6px 6px 6px #F2F2F2;
     }
     .titreactivite{
     grid-column-start:1;
@@ -1014,7 +1012,7 @@
     justify-content:center;
     color: #0065FC;
     border-bottom: 2px solid #0065FC;
-    border-bottom-width: 100%;
+    border-bottom-width: auto;
     padding-bottom: 0px;
     line-height: 0px;
     padding-top: 12PX;
@@ -1026,7 +1024,7 @@
     font-size: 1.2em;
     justify-content: center;
     border-bottom: 2px solid #F2F2F2;
-    border-bottom-width: 110%;
+    border-bottom-width: 100%;
     padding-bottom: 13px;
     margin-left: 0;
     margin-right: 0;
@@ -1097,7 +1095,7 @@
     grid-template-rows: 50px 50px 50px 50px;
     grid-row-gap: 20px;
     margin-left: 25px;
-    width: 380x;
+    width: 380px;
     margin-bottom: 155px;
     }
     .pointinfo{
