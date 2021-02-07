@@ -781,7 +781,7 @@
     border-radius: 15px;
     width: auto;
     height: auto;
-    box-shadow: grey;
+    box-shadow: 6px 6px 6px grey;
     max-width: 700px;
     padding-left: 0;
     margin-top: 100px;
@@ -796,7 +796,7 @@
     height: 180px;
     width: 90%;
     border-top: 4px solid white;
-    box-shadow:white;
+    box-shadow: 6px 6px 6px grey;
     background-color: white;
     overflow: hidden;
     border-radius: 15px;
@@ -826,7 +826,7 @@
     margin-top: 15px;
     }
     .gridrighttitle{
-    grid-template-columns: 1;
+    grid-column-start: 1;
     grid-row-start: 1;
     padding-left: 20px;
     }
@@ -865,7 +865,7 @@
     flex-direction: column;
     height: 200px;
     width: 100%;
-    box-shadow: grey;
+    box-shadow: 6px 6px 6px grey;
     overflow: hidden;
     background-color:#F2F2F2;
     border-radius: 15px;
@@ -913,11 +913,11 @@
     }
     .picturea, .pictureap{
     border-top-left-radius: 15px;
-     border-top-right-radius: 15px;
+    border-top-right-radius: 15px;
     height: 90%;
     width: 95%;
     overflow: hidden;
-    padding: auto;
+    padding: 4px;
     }
     /**Point footer pied de page**/
     footer{
@@ -1012,7 +1012,6 @@
     justify-content:center;
     color: #0065FC;
     border-bottom: 2px solid #0065FC;
-    border-bottom-width: auto;
     padding-bottom: 0px;
     line-height: 0px;
     padding-top: 12PX;
@@ -1024,7 +1023,6 @@
     font-size: 1.2em;
     justify-content: center;
     border-bottom: 2px solid #F2F2F2;
-    border-bottom-width: 100%;
     padding-bottom: 13px;
     margin-left: 0;
     margin-right: 0;
@@ -1266,7 +1264,7 @@
     border-bottom-left-radius: 15px;
     }
     .gridrighttitle{
-    grid-template-columns: 1;
+    grid-column-start: 1;
     grid-row-start: 1;
     }
     .room7{
