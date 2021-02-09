@@ -94,7 +94,7 @@
     }
     #precision{
     display: grid;
-    grid-template-columns: 65%;
+    grid-template-columns: 100%;
     grid-template-rows: 60px 60px;
     margin-bottom: 45px;
     }
@@ -156,27 +156,29 @@
     #liste{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: flex-end;
     width: 100%;
     float: left;
+
     }
     .fa-info{
     color: #0065FC;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
-    margin-right: 10px;
+    margin-right: 5px;
     }
     .filtre{
     display: flex;
     align-items: center;
     box-sizing: content-box;
     border: solid #F2F2F2;
-    height: 49px;
+    height: 750px;
     border-radius: 30px;
     margin-bottom: 250px;
-    padding-right: 15;
+    padding-right: 15px;
     float:left;
+    font-size: 1vw;
     }
     .filtre:hover{
     background-color: #0065FC;
