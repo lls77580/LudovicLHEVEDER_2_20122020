@@ -163,8 +163,6 @@
     align-content: center;
     padding-bottom: 2vw;
     padding-left: 0.3vw;
-
-
     }
     #ville{
     width: 59%;
@@ -179,8 +177,7 @@
     border-top-right-radius: 15px;
     font-size: 1vw;
     font-weight: bolder;
-    color: white;
-      
+    color: white; 
     }
     #liste{
     display: flex;
@@ -695,7 +692,9 @@
     height: 48px;
     background-color: #0065FC;
     border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;       
+    border-top-right-radius: 15px;  
+    font-weight: bolder;
+    color: white;    
     }
     #liste{
     display: flex;
