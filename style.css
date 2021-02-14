@@ -885,7 +885,7 @@
     height: 20vw;
     width: 92vw;
     box-shadow: 6px 6px 6px grey;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.938);
     overflow: hidden;
     border-radius: 15px;
     }
