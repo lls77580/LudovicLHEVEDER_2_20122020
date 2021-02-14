@@ -22,6 +22,9 @@
     display: flex;
     justify-content: flex-end;
     }
+    .fa, .far, .fas{
+    font-family: "Font Awesome 5 Free";
+    }
 /**Partie maine desktop**/
 @media screen and (min-width:1001px)
 {
@@ -305,10 +308,8 @@
     justify-content: center;
     align-content: center;
     width: 13vw;
-    background-color: white;
     height: auto;
     box-shadow: 6px 6px 6px grey;
-    border: 4px solid white;
     overflow: hidden;
     }
     figcaption{
@@ -397,7 +398,6 @@
     height: 7vw;
     max-height: max-content;
     min-height: min-content;
-    border-top: 4px solid white;
     background-color: white;
     box-shadow: 6px 6px 6px grey;
     border: 4px solid white;
@@ -475,7 +475,6 @@
     width: 100%;
     border-radius:  15px;
     box-shadow: 6px 6px 6px grey;
-    background-color: white;
     padding-bottom: 0;
     margin-bottom: 0;
     }
@@ -781,13 +780,9 @@
     }
     .placeleft{
     border-radius: 15px;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-column-gap: 5%;
-    grid-template-rows: auto auto auto;
+    display: flex;
     flex-direction: column;
     width: 35vw;
-    border-top: 2px solid white;
     background-color: white;
     box-shadow: 6px 6px 6px grey;
     height: 20vw;
@@ -853,12 +848,14 @@
     padding-bottom: 0;
     padding-top: 0;
     font-size: 1.3vw;
+    padding-left: 10px;
     }
     .mep1{
     font-weight: bolder;
     margin-bottom: 0px;
     margin-top: 0px;
     font-size: 1.4vw;
+    padding-left: 10px;
     }
     /*partie et présentation de droite Populaire*/
     #gridright{
@@ -887,7 +884,6 @@
     justify-content: center;
     height: 20vw;
     width: 92vw;
-    border-top: 4px solid white;
     box-shadow: 6px 6px 6px grey;
     background-color: white;
     overflow: hidden;
@@ -904,7 +900,7 @@
     border-top-left-radius: 15px;
     object-fit: cover;
     overflow: hidden;
-    border-left: 4px solid white;
+    border: 4px solid white;
     }
     .presentation{
     padding-bottom: 10vw;
@@ -960,7 +956,6 @@
     width: 100%;
     box-shadow: 6px 6px 6px grey;
     overflow: hidden;
-    background-color:#F2F2F2;
     border-radius: 15px;
     padding-left: 6px;
     padding-top: 6px;
@@ -1219,7 +1214,7 @@
     width: max-content;
     margin-top: 10px;
     }
-    .éco{
+    .eco{
     grid-row-start: 2;
     grid-column-start: 1;
     }
