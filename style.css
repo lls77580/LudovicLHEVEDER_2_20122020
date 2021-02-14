@@ -309,6 +309,7 @@
     align-content: center;
     width: 13vw;
     height: auto;
+    background-color: white;
     box-shadow: 6px 6px 6px grey;
     overflow: hidden;
     }
@@ -1431,7 +1432,6 @@
     max-width: 85vw;
     height:auto;
     margin-bottom: 2vw;
-    background-color: white;
     }
     .actiunder{
     display: flex;
