@@ -22,7 +22,7 @@
     display: flex;
     justify-content: flex-end;
     }
-/**Partie Principale desktop**/
+/**Partie maine desktop**/
 @media screen and (min-width:1001px)
 {
 
@@ -112,10 +112,13 @@
     grid-row-start: 2;
     margin-bottom: auto;
     margin-top: 40px;
-    width: 85vw;
+    width: 60vw;
     display: flex;
     justify-content: flex-start;
     padding-left: 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-left: 0;
     }
     .loupe{
     display:none;
@@ -182,6 +185,8 @@
     width: 100%;
     float: left;
     padding-left: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
 
     }
     .fa-info{
@@ -195,6 +200,7 @@
     display: flex;
     align-items: center;
     box-sizing: content-box;
+    width: max-content;
     border: solid #F2F2F2;
     height: 50px;
     border-radius: 30px;
@@ -215,14 +221,16 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    border-radius: 100%;
+    align-items: center;
+    border-radius: 50%;
     color: #0065FC;
     background-color: #DEEBFF;
-    padding: 25px;
-    width: 20px;
+    width: 45px;
+    padding: 10px;
+    height: 45px;
     margin : 0 0.4vw 0 0;
     }
-    #principalgrid{
+    #maingrid{
     display: grid;
     width: 80vw;
     grid-template-columns: 61% 35%;
@@ -248,6 +256,8 @@
     padding-left: 4%;
     margin-bottom: 60px;
     margin-top:0;
+    padding-bottom: 3.5%;
+    overflow: hidden;
     }
     .room1
     {
@@ -299,6 +309,7 @@
     height: auto;
     box-shadow: 6px 6px 6px grey;
     border: 4px solid white;
+    overflow: hidden;
     }
     figcaption{
     line-height: 100%;
@@ -372,6 +383,7 @@
     padding-left: 1.5vw;
     padding-right: 1.5vw;
     padding-bottom: 3vw;
+    overflow: hidden;
     }
     .rightpart{
     border-radius: 15px;
@@ -400,6 +412,7 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     object-fit: cover;
+    overflow: hidden;
     }
     .gridrighttitle{
     grid-column-start:1;
@@ -742,7 +755,7 @@
     padding: 20px;
     width: 20px;
     }
-    #principalgrid{
+    #maingrid{
     display: grid;
     grid-template-columns: 95vw;
     grid-template-rows: auto auto auto;
@@ -1045,11 +1058,12 @@
     padding-right: 0;
     }
     .logo{
-    padding-top: 10px;
+    padding-top: 40px;
     margin-right: 200px;
     padding-right: 200px;
+    padding-left: 15px;
     width: 60%;   
-    height: 60%;  
+    height: auto;  
     }
     #biggerscreen{
     display: none;
@@ -1060,6 +1074,23 @@
     grid-template-rows: auto auto;
     text-align: center;
     width: 100vw;
+    }
+    .attribut{
+    display: none;
+    }
+    #Boutonrecherche{
+    width:30%;
+    height: 48px;
+    background-color: #0065FC;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;       
+    }
+    .loupe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
     }
     .sousnavigation{
     display: grid;
@@ -1101,6 +1132,9 @@
     margin-left: 0;
     margin-right: 0;
     }
+    .pointinfo{
+    display: none;
+    }
     .activites{
     grid-column-start:2;
     font-size: 1.2em;
@@ -1113,6 +1147,7 @@
     .hebergements:active, .activites:active{
     color:#0065FC;
     border-bottom:2PX solid #0065FC;
+    margin-right: 25px;
     }
     #info{
     width: 80%;
@@ -1121,11 +1156,13 @@
     .search{
     grid-column-start: 1;
     grid-row-start: 1;
+    width: 85vw;
     }
     .fil{
-    width: 85vw;
-    margin-left: 25px;
+    width: 100vw;
+    margin-left: 15px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     }
     .titfil{
@@ -1138,8 +1175,8 @@
     flex-flow: row;
     align-content: center;
     justify-content: center;
-    margin-left: 40px;
-    width: 330px;
+    margin-left: auto;
+    width: 90%;
     height: 48px;
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -1150,7 +1187,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15.15%;
+    width: 10%;
     height: 48px;
     }
     .fa-map-marker-alt{
@@ -1159,30 +1196,17 @@
     justify-content: center;
     }
     #ville{
-    width: 69.70%;
+    width: 60%;
     height: 48px;
     Border: 2px solid #F2F2F2;
-    }
-    #Boutonrecherche{
-    display: none;
-    }
-    .loupe{
-    display: flex;
-    width:15.15%;
-    height: 48px;
-    background-color: #0065FC;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    color: white;
     }
     #liste{
     display: flex;
     flex-direction: row;
-    margin-left: 30vw;
-    width: 85vw;
-    margin-bottom: 155px;
+    justify-content: flex-start;
+    width: max-content;
+    flex-wrap: wrap;
+    height: max-content;
     }
     .filtre{
     display: flex;
@@ -1191,10 +1215,8 @@
     border: solid #F2F2F2;
     height: 50px;
     border-radius: 30px;
-    padding-right: 23px;
+    padding-right: 10px;
     width: max-content;
-    float:left;
-    margin-right: 30px;
     margin-top: 10px;
     }
     .éco{
@@ -1231,7 +1253,7 @@
     width: 20px;
     margin : 0 10px 0 0;
     }
-    #principalgrid{
+    #maingrid{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
@@ -1324,6 +1346,7 @@
     font-size: 2.5vw;
     line-height: 40%;
     padding-left: 10px;
+    flex-wrap: wrap;
     }
     .mep1{
     font-weight: bolder;
@@ -1332,6 +1355,7 @@
     padding-bottom: 0;
     line-height: 50%;
     padding-left: 10px;
+    flex-wrap: wrap;
     }
     #true{
     display: inline-flex;
@@ -1384,7 +1408,7 @@
     .picturer{
     display:grid;
     grid-column-start: 1;
-    width: 122px;
+    width: 30vw;
     height: 95%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -1395,13 +1419,17 @@
     margin-bottom: 45px;
     padding-left: 0;
     flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
     }
     .presentationhn{
-    padding-top: 10px;
+    padding-top: 0.1px;
     font-size: 1.2em;
     font-weight: bolder;
     margin-top: 10px;
     flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
     }
     /*partie et présentation des activité*/
     #gridunder{
