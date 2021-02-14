@@ -999,7 +999,7 @@
     display: flex;
     justify-content: flex-start;
     align-content: flex-start;
-    height: 20px;  
+    height: auto;  
     font-size: 1vw;
     font-weight: bolder;
     
@@ -1321,7 +1321,6 @@
     align-content: flex-start;
     width: 80vw;
     border-top: 10vw;
-    background-color: white;
     height: max-content;
     box-shadow: 6px 6px 6px grey;
     margin-bottom: 10vw;
@@ -1401,7 +1400,6 @@
     width: 80vw;
     height: 144px;
     border: 4px;
-    background-color: white;
     box-shadow: 6px 6px 6px grey;
     margin-bottom: 25px;
     }
