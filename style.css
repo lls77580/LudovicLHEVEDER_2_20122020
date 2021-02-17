@@ -88,6 +88,7 @@
     padding-bottom: 21px;
     margin-right: 60px;
     font-weight: 900;
+    transition: transform;
     }
     .hebergements:hover, .activites:hover, .inscription:hover{
     border-top: 3px solid #0065FC;
@@ -98,6 +99,11 @@
     width: auto;
     color: #0065FC;
     }
+    .hebergements:active, .activites:active, .inscription:active{
+    color: #F2F2F2;
+    border-bottom: 3px solid #DEEBFF;
+    transform: scale(1.7);
+    }  
     #precision{
     display: grid;
     grid-template-columns: 100vw;
@@ -168,6 +174,10 @@
     width: 59%;
     height: 55px;
     Border: 2px solid #F2F2F2;
+    }
+    #ville:focus{
+    border: 2px solid vi;
+    
     }
     #Boutonrecherche{
     width:30%;
@@ -311,6 +321,11 @@
     background-color: white;
     box-shadow: 6px 6px 6px grey;
     overflow: hidden;
+    transition: all 400ms;
+    }
+    .placeleft:hover{
+    transform: scale(1.2);
+    overflow: visible;
     }
     figcaption{
     line-height: 100%;
@@ -446,7 +461,7 @@
     padding-left: 10px;
     }
     .presentationhn{
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: bolder;
     margin-bottom: 5px;
     margin-top: 0px;
