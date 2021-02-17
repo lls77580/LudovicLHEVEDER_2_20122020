@@ -173,11 +173,7 @@
     #ville{
     width: 59%;
     height: 55px;
-    Border: 2px solid #F2F2F2;
-    }
-    #ville:focus{
-    border: 2px solid vi;
-    
+    Border: 2px solid #F2F2F2;   
     }
     #Boutonrecherche{
     width:30%;
